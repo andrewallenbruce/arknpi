@@ -1,3 +1,3 @@
 # arknpi (development version)
 
-* Initial CRAN submission.
+   * Initial commit
