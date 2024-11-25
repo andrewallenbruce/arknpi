@@ -4,7 +4,7 @@
 \name{arknpi-package}
 \alias{arknpi}
 \alias{arknpi-package}
-\title{arknpi: Archive: NPPES NPI Registry}
+\title{arknpi: Archive: NPPES NPI Registry, 2017 - 2024}
 \description{
 What the package does (one paragraph).
 }

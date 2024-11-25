@@ -1,5 +1,5 @@
 Package: arknpi
-Title: Archive: NPPES NPI Registry
+Title: Archive: NPPES NPI Registry, 2017 - 2024
 Version: 0.0.0.9000
 Authors@R: 
     person(c("Andrew", "Allen"), "Bruce", , "andrewallenbruce@gmail.com", role = c("aut", "cre", "cph"))
