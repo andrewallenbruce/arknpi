@@ -3,3 +3,5 @@
 export(get_pin)
 export(list_pins)
 export(mount_board)
+export(other_id_type)
+export(other_name_type)
