@@ -11,7 +11,6 @@ version](https://img.shields.io/github/r-package/v/andrewallenbruce/arknpi?style
 size](https://img.shields.io/github/languages/code-size/andrewallenbruce/arknpi.svg)](https://github.com/andrewallenbruce/arknpi)
 [![Last
 commit](https://img.shields.io/github/last-commit/andrewallenbruce/arknpi.svg)](https://github.com/andrewallenbruce/arknpi/commits/master)
-[![R-CMD-check](https://github.com/andrewallenbruce/arknpi/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/andrewallenbruce/arknpi/actions/workflows/R-CMD-check.yaml)
 [![License:
 MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://choosealicense.com/licenses/mit/)
 [![Codecov test
