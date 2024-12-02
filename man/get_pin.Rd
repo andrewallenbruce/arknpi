@@ -12,7 +12,7 @@ get_pin(pin, ...)
 \item{...}{additional arguments passed to \code{mount_board()}}
 }
 \value{
-\verb{<tibble>} or \verb{<data.frame>}
+\verb{<tibble>} or \verb{<data.frame>} of selected pin
 }
 \description{
 Get a pinned dataset from a \link[pins:pins-package]{pins} board
