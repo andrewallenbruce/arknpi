@@ -1,4 +1,35 @@
-source(here::here("data-raw", "misc_functions.R"))
+source(here::here("data-raw", "pins_internal.R"))
+library(collapse)
+
+# npidata_paths <- dplyr::filter(nppez::get_pin("nber_weekly_info")$unzipped, file == "npidata_pfile")$path
+# npidata_paths <- vctrs::vec_slice(
+#   fs::dir_ls(path = fs::path("D:/NBER_NPI_Archives/weekly/unzipped", "npidata"), regexp = "npidata_pfile"),
+#   fs::dir_ls(path = fs::path("D:/NBER_NPI_Archives/weekly/npidata", "unzipped"), regexp = "npidata") |>
+#     stringr::str_which("[Ff]ile[Hh]eader", negate = TRUE))
+
+npidata_paths <- fs::dir_ls(
+  path = fs::path("D:/NBER_NPI_Archives/weekly/unzipped", "npidata"),
+  regexp = "npidata_pfile_202401")
+
+make_pin_id <- function(path) {
+
+  x <- gsub("-", "_", tools::file_path_sans_ext(basename(path)))
+
+  strs <- codex::sf_strsplit(x, "_")[[1]]
+
+  dates <- as_date(strs[3:4], fmt = "%Y%m%d")
+
+  yr <- as.character(lubridate::year(dates[1]))
+
+  mn <- lubridate::month(dates[1]) |>
+    stringr::str_pad(2, pad = "0")
+
+  days <- lubridate::day(dates) |>
+    stringr::str_pad(2, pad = "0") |>
+    stringr::str_c(collapse = "-")
+
+  stringr::str_glue("wk_{yr}_{mn}_{days}")
+}
 
 read_npi_raw_csv <- function(path) {
 
@@ -187,14 +218,16 @@ clean_weekly_npi_file <- function(path) {
   )
 }
 
-dataset <- clean_weekly_npi_file(npidata_paths[1])
+npidata_paths
 
-# purrr::map(npidata_paths[1:2], clean_weekly_npi_file) |>
-#   purrr::set_names(make_id(npidata_paths[1:2]))
+dataset <- clean_weekly_npi_file(npidata_paths[5])
 
 pin_update(
   dataset,
-  name = make_pin_id(npidata_paths[1]),
-  title = "NPPES 2024, Jan 1 - 7",
-  description = "NPPES NPI Registry, Week of January 1 - 7, 2024"
+  name = make_pin_id(npidata_paths[5]),
+  title = "NPPES 2024, Jan 29 - Feb 4",
+  description = "NPPES NPI Registry, Week of January 29 - February 4, 2024"
 )
+
+# purrr::map(npidata_paths[1:2], clean_weekly_npi_file) |>
+#   purrr::set_names(make_id(npidata_paths[1:2]))

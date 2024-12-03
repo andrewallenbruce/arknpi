@@ -1,0 +1,10 @@
+file: deactivated.qs
+file_size: 18223
+pin_hash: e88266a513023050
+type: qs
+title: Deactivated NPIs
+description: Deactivated NPIs and Date of Deactivation
+tags: ~
+urls: ~
+created: 20241203T043724Z
+api_version: 1

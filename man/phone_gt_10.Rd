@@ -16,6 +16,6 @@ A character vector
 Format a 10-digit phone number
 }
 \examples{
-phone_gt_10(c("9122474701  9122474701", NA))
+phone_gt_10(c("9122474701, 9122474701", NA))
 
 }

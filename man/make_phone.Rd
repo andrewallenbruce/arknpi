@@ -18,6 +18,6 @@ Format a 10-digit phone number
 \examples{
 make_phone("9122474701")
 
-make_phone("9122474701  9122474701")
+make_phone("9122474701, 9122474701")
 
 }

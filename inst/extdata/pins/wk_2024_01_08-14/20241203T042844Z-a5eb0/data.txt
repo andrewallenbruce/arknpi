@@ -1,0 +1,10 @@
+file: wk_2024_01_08-14.qs
+file_size: 2264507
+pin_hash: a5eb06102ca39b8e
+type: qs
+title: NPPES 2024, Jan 8 - 14
+description: NPPES NPI Registry, Week of January 8 - 14, 2024
+tags: ~
+urls: ~
+created: 20241203T042844Z
+api_version: 1

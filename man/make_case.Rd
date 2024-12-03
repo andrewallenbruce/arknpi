@@ -12,12 +12,21 @@ make_case(x, y)
 \item{y}{A character vector}
 }
 \value{
-A character vector
+character string:
+\itemize{
+\item If x & y are not \code{NA} and equal, \strong{\code{y}}
+\item If x & y are not \code{NA} and not equal, \strong{\verb{x, y}}
+\item If x is not \code{NA} and y is, \strong{\code{x}}
+\item If x is \code{NA} and y is not, \strong{\code{y}}
+\item Otherwise, \strong{\code{NA}}
+}
 }
 \description{
 Make a case statement
 }
 \examples{
-make_case(c("1", "1", "3", NA), c("1", "2", NA, "4"))
+make_case(
+   c("1", "1", "3", NA),
+   c("1", "2", NA, "4"))
 
 }

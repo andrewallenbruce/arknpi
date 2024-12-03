@@ -1,0 +1,10 @@
+file: wk_2024_01_22-28.qs
+file_size: 2276957
+pin_hash: bf2c9c50eaf83bb1
+type: qs
+title: NPPES 2024, Jan 22 - 28
+description: NPPES NPI Registry, Week of January 22 - 28, 2024
+tags: ~
+urls: ~
+created: 20241203T043047Z
+api_version: 1

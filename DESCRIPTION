@@ -12,6 +12,7 @@ BugReports: https://github.com/andrewallenbruce/arknpi/issues
 Imports: 
     codex,
     data.table,
+    fuimus,
     pins
 Suggests:
     fs,
@@ -21,6 +22,7 @@ Suggests:
     testthat (>= 3.0.0)
 Remotes: 
     github::andrewallenbruce/codex
+    github::andrewallenbruce/fuimus
 Config/roxyglobals/filename: generated-globals.R
 Config/roxyglobals/unique: TRUE
 Config/testthat/edition: 3
