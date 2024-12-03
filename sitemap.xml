@@ -7,11 +7,20 @@
 <url><loc>https://andrewallenbruce.github.io/arknpi/index.html</loc></url>
 <url><loc>https://andrewallenbruce.github.io/arknpi/news/index.html</loc></url>
 <url><loc>https://andrewallenbruce.github.io/arknpi/reference/arknpi-package.html</loc></url>
+<url><loc>https://andrewallenbruce.github.io/arknpi/reference/as_date.html</loc></url>
+<url><loc>https://andrewallenbruce.github.io/arknpi/reference/entity_recode.html</loc></url>
 <url><loc>https://andrewallenbruce.github.io/arknpi/reference/get_pin.html</loc></url>
 <url><loc>https://andrewallenbruce.github.io/arknpi/reference/index.html</loc></url>
 <url><loc>https://andrewallenbruce.github.io/arknpi/reference/list_pins.html</loc></url>
+<url><loc>https://andrewallenbruce.github.io/arknpi/reference/make_case.html</loc></url>
+<url><loc>https://andrewallenbruce.github.io/arknpi/reference/make_phone.html</loc></url>
+<url><loc>https://andrewallenbruce.github.io/arknpi/reference/make_zip.html</loc></url>
 <url><loc>https://andrewallenbruce.github.io/arknpi/reference/mount_board.html</loc></url>
 <url><loc>https://andrewallenbruce.github.io/arknpi/reference/other_id_type.html</loc></url>
 <url><loc>https://andrewallenbruce.github.io/arknpi/reference/other_name_type.html</loc></url>
+<url><loc>https://andrewallenbruce.github.io/arknpi/reference/phone_eq_10.html</loc></url>
+<url><loc>https://andrewallenbruce.github.io/arknpi/reference/phone_gt_10.html</loc></url>
+<url><loc>https://andrewallenbruce.github.io/arknpi/reference/remove_periods.html</loc></url>
+<url><loc>https://andrewallenbruce.github.io/arknpi/reference/wrap.html</loc></url>
 </urlset>
 
