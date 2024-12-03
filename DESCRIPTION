@@ -21,7 +21,7 @@ Suggests:
     roxyglobals,
     testthat (>= 3.0.0)
 Remotes: 
-    github::andrewallenbruce/codex
+    github::andrewallenbruce/codex,
     github::andrewallenbruce/fuimus
 Config/roxyglobals/filename: generated-globals.R
 Config/roxyglobals/unique: TRUE
