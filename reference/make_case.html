@@ -62,12 +62,18 @@
 </dl></div>
     <div class="section level2">
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
-    <p>A character vector</p>
-    </div>
+    <p>character string:</p><ul><li><p>If x &amp; y are not <code>NA</code> and equal, <strong><code>y</code></strong></p></li>
+<li><p>If x &amp; y are not <code>NA</code> and not equal, <strong><code>x, y</code></strong></p></li>
+<li><p>If x is not <code>NA</code> and y is, <strong><code>x</code></strong></p></li>
+<li><p>If x is <code>NA</code> and y is not, <strong><code>y</code></strong></p></li>
+<li><p>Otherwise, <strong><code>NA</code></strong></p></li>
+</ul></div>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">make_case</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"1"</span>, <span class="st">"1"</span>, <span class="st">"3"</span>, <span class="cn">NA</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"1"</span>, <span class="st">"2"</span>, <span class="cn">NA</span>, <span class="st">"4"</span><span class="op">)</span><span class="op">)</span></span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">make_case</span><span class="op">(</span></span></span>
+<span class="r-in"><span>   <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"1"</span>, <span class="st">"1"</span>, <span class="st">"3"</span>, <span class="cn">NA</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>   <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"1"</span>, <span class="st">"2"</span>, <span class="cn">NA</span>, <span class="st">"4"</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] "1"    "1, 2" "3"    "4"   </span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
