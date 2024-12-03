@@ -12,12 +12,9 @@ BugReports: https://github.com/andrewallenbruce/arknpi/issues
 Imports: 
     codex,
     data.table,
-    forcats,
-    fs,
-    pins,
-    stringr
+    pins
 Suggests:
-    dplyr,
+    fs,
     kit,
     qs,
     roxyglobals,

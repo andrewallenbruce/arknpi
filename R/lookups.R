@@ -5,9 +5,9 @@
 #' @returns `<chr>` vector of `otid` descriptions
 #'
 #' @examples
-#' dplyr::tibble(
-#'  otid_type = as.character(1:8),
-#'  otid_desc = other_id_type(otid_type))
+#' data.table::data.table(
+#'   otid_type = as.character(1:8),
+#'   otid_desc = other_id_type(as.character(1:8)))
 #'
 #' @autoglobal
 #'
@@ -25,7 +25,8 @@ other_id_type <- function(x) {
     "6", "Medicare Oscar-Certification",
     "7", "Medicare NSC",
     "8", "Medicare PIN",
-    default = NA_character_
+    default = NA_character_,
+    nThread = 4L
   )
 }
 
@@ -36,9 +37,9 @@ other_id_type <- function(x) {
 #' @returns `<chr>` vector of `other_*_type` descriptions
 #'
 #' @examples
-#' dplyr::tibble(
-#'  oname_type = as.character(1:5),
-#'  oname_desc = other_name_type(oname_type))
+#' data.table::data.table(
+#'   oname_type = as.character(1:5),
+#'   oname_desc = other_name_type(as.character(1:5)))
 #'
 #' @autoglobal
 #'
@@ -54,6 +55,7 @@ other_name_type <- function(x) {
     "3", "Doing Business As",
     "4", "Former Legal Business Name",
     "5", "Other Name",
-    default = NA_character_
+    default = NA_character_,
+    nThread = 4L
   )
 }

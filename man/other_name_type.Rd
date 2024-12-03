@@ -16,9 +16,9 @@ other_name_type(x)
 NPPES Other Name Type
 }
 \examples{
-dplyr::tibble(
- oname_type = as.character(1:5),
- oname_desc = other_name_type(oname_type))
+data.table::data.table(
+  oname_type = as.character(1:5),
+  oname_desc = other_name_type(as.character(1:5)))
 
 }
 \seealso{

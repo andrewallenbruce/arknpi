@@ -16,9 +16,9 @@ other_id_type(x)
 NPPES Other Identifier Type
 }
 \examples{
-dplyr::tibble(
- otid_type = as.character(1:8),
- otid_desc = other_id_type(otid_type))
+data.table::data.table(
+  otid_type = as.character(1:8),
+  otid_desc = other_id_type(as.character(1:8)))
 
 }
 \seealso{
