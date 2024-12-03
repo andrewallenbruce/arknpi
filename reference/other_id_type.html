@@ -68,20 +68,19 @@
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html" class="external-link">tibble</a></span><span class="op">(</span></span></span>
-<span class="r-in"><span> otid_type <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/character.html" class="external-link">as.character</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">8</span><span class="op">)</span>,</span></span>
-<span class="r-in"><span> otid_desc <span class="op">=</span> <span class="fu">other_id_type</span><span class="op">(</span><span class="va">otid_type</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 8 × 2</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   otid_type otid_desc                   </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                       </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> 1         Other                       </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> 2         Medicare UPIN               </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span> 3         <span style="color: #BB0000;">NA</span>                          </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span> 4         Medicare ID-Type Unspecified</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">5</span> 5         Medicaid                    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">6</span> 6         Medicare Oscar-Certification</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">7</span> 7         Medicare NSC                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">8</span> 8         Medicare PIN                </span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">data.table</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/data.table/man/data.table.html" class="external-link">data.table</a></span><span class="op">(</span></span></span>
+<span class="r-in"><span>  otid_type <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/character.html" class="external-link">as.character</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">8</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>  otid_desc <span class="op">=</span> <span class="fu">other_id_type</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/character.html" class="external-link">as.character</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">8</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    otid_type                    otid_desc</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>       &lt;char&gt;                       &lt;char&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1:         1                        Other</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2:         2                Medicare UPIN</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3:         3                         &lt;NA&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4:         4 Medicare ID-Type Unspecified</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5:         5                     Medicaid</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6:         6 Medicare Oscar-Certification</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 7:         7                 Medicare NSC</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 8:         8                 Medicare PIN</span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
