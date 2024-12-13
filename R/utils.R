@@ -40,10 +40,10 @@ entity_recode <- function(x) {
 #' @export
 make_case <- function(x, y) {
   data.table::fcase(
-    codex::not_na(x) & codex::not_na(y) & x == y, y,
-    codex::not_na(x) & codex::not_na(y) & x != y, paste0(x, ", ", y),
-    codex::not_na(x) & codex::na(y), x,
-    codex::na(x) & codex::not_na(y), y,
+    not_na(x) & not_na(y) & x == y, y,
+    not_na(x) & not_na(y) & x != y, paste0(x, ", ", y),
+    not_na(x) & na(y), x,
+    na(x) & not_na(y), y,
     default = NA_character_)
 }
 
@@ -66,8 +66,8 @@ make_case <- function(x, y) {
 #' @export
 make_purpose <- function(x, y) {
   data.table::fcase(
-    codex::not_na(x) & codex::na(y), "M",
-    codex::na(x) & codex::not_na(y), "P",
+    not_na(x) & na(y), "M",
+    na(x) & not_na(y), "P",
     default = "MP")
 }
 
@@ -85,7 +85,7 @@ make_purpose <- function(x, y) {
 #' @export
 make_zip <- function(x) {
   ifelse(
-    codex::not_na(x) & nchar(x) == 9,
+    not_na(x) & sf_chars(x) == 9,
     fuimus::glue_chr("{substr(x, 1, 5)}-{substr(x, 6, 9)}"),
     x)
 }
@@ -104,7 +104,7 @@ make_zip <- function(x) {
 #' @export
 phone_eq_10 <- function(x) {
 
-  x <- x[codex::not_na(x)]
+  x <- x[not_na(x)]
 
   paste0(
     "(",
@@ -130,7 +130,7 @@ phone_eq_10 <- function(x) {
 #' @export
 phone_gt_10 <- function(x) {
 
-  x <- x[codex::not_na(x)]
+  x <- x[not_na(x)]
 
   paste0(
     "(",
@@ -166,30 +166,14 @@ make_phone <- function(x) {
 
   c1 <- "({substr(x, 1, 3)}) {substr(x, 4, 6)}-{substr(x, 7, 10)}"
   cc <- ", ({substr(x, 13, 15)})-{substr(x, 16, 18)}-{substr(x, 19, 22)}"
-  c2 <- codex::smush(c1, cc)
+  c2 <- paste0(c1, cc, collapse = "")
 
 
   data.table::fcase(
-    codex::not_na(x) & codex::sf_nchar(x) == 10, fuimus::glue_chr(c1),
-    codex::not_na(x) & codex::sf_nchar(x) > 10, fuimus::glue_chr(c2),
+    not_na(x) & sf_chars(x) == 10, fuimus::glue_chr(c1),
+    not_na(x) & sf_chars(x) > 10, fuimus::glue_chr(c2),
     default = x)
 }
-
-#' Format a Date
-#'
-#' @param x character string
-#'
-#' @param fmt string format, e.g. '%m/%d/%Y'
-#'
-#' @returns date string
-#'
-#' @examples
-#' as_date("12/31/2021")
-#'
-#' @autoglobal
-#'
-#' @export
-as_date <- function(x, fmt = "%m/%d/%Y") as.Date(x, format = fmt)
 
 #' Remove periods
 #'
@@ -203,7 +187,7 @@ as_date <- function(x, fmt = "%m/%d/%Y") as.Date(x, format = fmt)
 #' @autoglobal
 #'
 #' @export
-remove_periods <- function(x) codex::sf_remove(x, "\\.")
+remove_periods <- function(x) sf_remove(x, "\\.")
 
 #' Wrap a string
 #'

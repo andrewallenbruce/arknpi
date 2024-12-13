@@ -11,7 +11,7 @@
 #' @export
 mount_board <- function(source = c("local", "remote")) {
 
-  gh_raw <- function(x) paste0("https://raw.githubusercontent.com/", x)
+  gh_raw <- \(x) paste0("https://raw.githubusercontent.com/", x)
 
   source <- match.arg(source)
 
