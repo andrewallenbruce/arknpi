@@ -1,5 +1,10 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# arknpi 0.0.0.9004 (2026-03-15)
+
+* spring cleaning
+
+
 # arknpi 0.0.0.9003 (2024-12-26)
 
 * updated standalone-helpers
