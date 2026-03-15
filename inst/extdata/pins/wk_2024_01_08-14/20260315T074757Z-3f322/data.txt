@@ -1,0 +1,10 @@
+file: wk_2024_01_08-14.rds
+file_size: 2633423
+pin_hash: 3f322e7ac2695b41
+type: rds
+title: NPPES 2024, Jan 8 - Jan 14
+description: NPPES NPI Registry, Week of January 8 - January 14, 2024
+tags: ~
+urls: ~
+created: 20260315T074757Z
+api_version: 1

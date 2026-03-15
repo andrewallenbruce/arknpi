@@ -9,3 +9,7 @@
 ^docs$
 ^pkgdown$
 ^data-raw$
+^\.positai$
+^\.claude$
+^[.]?air[.]toml$
+^\.vscode$

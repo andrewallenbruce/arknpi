@@ -1,0 +1,10 @@
+file: wk_2024_01_01-07.rds
+file_size: 2082139
+pin_hash: b96aa163d97efb84
+type: rds
+title: NPPES 2024, Jan 1 - Jan 7
+description: NPPES NPI Registry, Week of January 1 - January 7, 2024
+tags: ~
+urls: ~
+created: 20260315T071835Z
+api_version: 1

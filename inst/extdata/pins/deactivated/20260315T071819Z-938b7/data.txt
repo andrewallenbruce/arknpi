@@ -1,10 +1,10 @@
-file: deactivated.qs
-file_size: 18223
-pin_hash: e88266a513023050
-type: qs
+file: deactivated.rds
+file_size: 19475
+pin_hash: 938b72cf65354030
+type: rds
 title: Deactivated NPIs
 description: Deactivated NPIs and Date of Deactivation
 tags: ~
 urls: ~
-created: 20241203T043724Z
+created: 20260315T071819Z
 api_version: 1
